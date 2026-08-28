@@ -20,6 +20,8 @@ This project extracts the reusable UI and data contract from a larger 2026 midte
 3. Open `Elections/Election Research Demo.md`.
 4. Follow the links to the three example race notes.
 
+See [INSTALL.md](INSTALL.md) for the complete starter-vault and existing-vault paths.
+
 Each race note embeds the same view:
 
 ```js
