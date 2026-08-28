@@ -50,6 +50,7 @@ The interface is reusable; a current election dataset is not automatically redis
 AI agents helped develop the original renderer, normalize heterogeneous inputs, extend the design from one state to every race, and build validation coverage. Human direction supplied the research model, editorial boundaries, UI judgment, and acceptance criteria. Generated sections were designed to leave handwritten analysis intact, and the production system was not considered healthy until all 176 race notes and 52 tests passed.
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for the data flow and extension points.
+See [HISTORY.md](HISTORY.md) for the distinction between the July prototype, the private 176-race workspace, and this public extraction.
 
 ## License
 
