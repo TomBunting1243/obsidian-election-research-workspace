@@ -43,3 +43,5 @@ Every `dashboard.json` requires:
 - structured `polling`, `campaign_finance`, `history`, and `election_calendar` objects
 
 Unavailable data should be represented honestly with a status and reason, not invented to fill the interface.
+
+The machine-readable contract is [schema/dashboard.schema.json](schema/dashboard.schema.json). The dependency-free validator enforces the same required top-level fields and the invariants needed by the renderer.
