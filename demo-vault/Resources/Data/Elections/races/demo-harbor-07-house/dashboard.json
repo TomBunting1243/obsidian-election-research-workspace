@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "race_id": "demo-harbor-07-house",
+  "retrieved_at": "2026-01-15T12:00:00Z",
+  "source": "Synthetic demonstration data",
+  "source_url": "https://example.com/demo-harbor-07-house",
+  "status": "demo",
+  "overview": "A fictional competitive House district used to demonstrate district-level research.",
+  "election_date": "November 3, 2026",
+  "candidates": [{"name":"Samira Patel","party":"D","url":""},{"name":"Drew Foster","party":"R","url":""}],
+  "incumbent": {"name":"Drew Foster","url":""},
+  "previous_election": {"name":"Previous fictional House election","url":""},
+  "ratings": [{"source":"Civic Forecast","rating":"Tilt R","as_of":"January 12, 2026"},{"source":"Public Desk","rating":"Toss-up","as_of":"January 14, 2026"}],
+  "election_calendar": {"status":"demo","events":[{"date":"2026-05-19","label":"Primary election","kind":"primary","source_url":"https://example.com/calendar"},{"date":"2026-11-03","label":"General election","kind":"general","source_url":"https://example.com/calendar"}]},
+  "polling": {"status":"demo","records":[{"id":"harbor-1","kind":"individual","source":"Example Polling","fieldwork_start":"2026-01-06","fieldwork_end":"2026-01-09","fieldwork":"Jan 6 - 9","pollster":"Harbor Sample Group","poll_details":"Harbor Sample Group, 500 LV","dem_share":46,"rep_share":48,"dem_margin":-2,"leader":"Foster (R) +2","source_url":"https://example.com/poll"}]},
+  "campaign_finance": {"status":"demo","records":[{"candidate":"Samira Patel","party":"D","receipts":1600000,"cash_on_hand":900000,"source_url":"https://example.com/finance"},{"candidate":"Drew Foster","party":"R","receipts":1800000,"cash_on_hand":1050000,"source_url":"https://example.com/finance"}]},
+  "history": {"status":"demo","series":[{"year":2022,"winner":"Avery Grant","winner_party":"D","margin":1.2},{"year":2024,"winner":"Drew Foster","winner_party":"R","margin":2.1}]},
+  "models": [{"name":"Open Demo Model","dem_probability":0.44,"rep_probability":0.56,"as_of":"2026-01-15","source_url":"https://example.com/model"}],
+  "model_trend": [{"date":"2026-01-01","source":"Open Demo Model","dem_probability":0.47,"rep_probability":0.53},{"date":"2026-01-15","source":"Open Demo Model","dem_probability":0.44,"rep_probability":0.56}],
+  "tracking": {}, "tracking_history": [], "rating_changes": [], "model_changes": []
+}

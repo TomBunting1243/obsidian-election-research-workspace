@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "race_id": "demo-north-senate",
+  "retrieved_at": "2026-01-15T12:00:00Z",
+  "source": "Synthetic demonstration data",
+  "source_url": "https://example.com/demo-north-senate",
+  "status": "demo",
+  "overview": "A fictional open-seat Senate contest used to demonstrate the workspace renderer.",
+  "election_date": "November 3, 2026",
+  "candidates": [{"name":"Alex Rivera","party":"D","url":""},{"name":"Jordan Hale","party":"R","url":""}],
+  "incumbent": {"name":"Morgan Lee","url":""},
+  "previous_election": {"name":"Previous fictional Senate election","url":""},
+  "ratings": [{"source":"Civic Forecast","rating":"Toss-up","as_of":"January 12, 2026"},{"source":"Public Desk","rating":"Tilt D","as_of":"January 14, 2026"}],
+  "election_calendar": {"status":"demo","events":[{"date":"2026-06-02","label":"Primary election","kind":"primary","source_url":"https://example.com/calendar"},{"date":"2026-11-03","label":"General election","kind":"general","source_url":"https://example.com/calendar"}]},
+  "polling": {"status":"demo","records":[{"id":"north-1","kind":"individual","source":"Example Polling","fieldwork_start":"2026-01-05","fieldwork_end":"2026-01-08","fieldwork":"Jan 5 - 8","pollster":"Sample Research","poll_details":"Sample Research, 800 LV","dem_share":48,"rep_share":47,"dem_margin":1,"leader":"Rivera (D) +1","source_url":"https://example.com/poll"}]},
+  "campaign_finance": {"status":"demo","records":[{"candidate":"Alex Rivera","party":"D","receipts":5200000,"cash_on_hand":3100000,"source_url":"https://example.com/finance"},{"candidate":"Jordan Hale","party":"R","receipts":4900000,"cash_on_hand":2900000,"source_url":"https://example.com/finance"}]},
+  "history": {"status":"demo","series":[{"year":2018,"winner":"Morgan Lee","winner_party":"D","margin":2.4},{"year":2024,"winner":"Morgan Lee","winner_party":"D","margin":0.8}]},
+  "models": [{"name":"Open Demo Model","dem_probability":0.53,"rep_probability":0.47,"as_of":"2026-01-15","source_url":"https://example.com/model"}],
+  "model_trend": [{"date":"2026-01-01","source":"Open Demo Model","dem_probability":0.5,"rep_probability":0.5},{"date":"2026-01-15","source":"Open Demo Model","dem_probability":0.53,"rep_probability":0.47}],
+  "tracking": {}, "tracking_history": [], "rating_changes": [], "model_changes": []
+}

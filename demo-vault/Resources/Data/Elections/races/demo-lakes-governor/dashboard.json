@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "race_id": "demo-lakes-governor",
+  "retrieved_at": "2026-01-15T12:00:00Z",
+  "source": "Synthetic demonstration data",
+  "source_url": "https://example.com/demo-lakes-governor",
+  "status": "demo",
+  "overview": "A fictional gubernatorial contest with an incumbent, included as a complete software fixture.",
+  "election_date": "November 3, 2026",
+  "candidates": [{"name":"Casey Okafor","party":"D","url":""},{"name":"Riley Chen","party":"R","url":""}],
+  "incumbent": {"name":"Casey Okafor","url":""},
+  "previous_election": {"name":"Previous fictional governor election","url":""},
+  "ratings": [{"source":"Civic Forecast","rating":"Lean D","as_of":"January 12, 2026"}],
+  "election_calendar": {"status":"demo","events":[{"date":"2026-08-04","label":"Primary election","kind":"primary","source_url":"https://example.com/calendar"},{"date":"2026-11-03","label":"General election","kind":"general","source_url":"https://example.com/calendar"}]},
+  "polling": {"status":"demo","records":[{"id":"lakes-1","kind":"individual","source":"Example Polling","fieldwork_start":"2026-01-03","fieldwork_end":"2026-01-07","fieldwork":"Jan 3 - 7","pollster":"Civic Sample Lab","poll_details":"Civic Sample Lab, 650 RV","dem_share":51,"rep_share":44,"dem_margin":7,"leader":"Okafor (D) +7","source_url":"https://example.com/poll"}]},
+  "campaign_finance": {"status":"demo","records":[{"candidate":"Casey Okafor","party":"D","receipts":3800000,"cash_on_hand":2200000,"source_url":"https://example.com/finance"},{"candidate":"Riley Chen","party":"R","receipts":3400000,"cash_on_hand":2100000,"source_url":"https://example.com/finance"}]},
+  "history": {"status":"demo","series":[{"year":2018,"winner":"Taylor Brooks","winner_party":"R","margin":3.1},{"year":2022,"winner":"Casey Okafor","winner_party":"D","margin":4.6}]},
+  "models": [{"name":"Open Demo Model","dem_probability":0.68,"rep_probability":0.32,"as_of":"2026-01-15","source_url":"https://example.com/model"}],
+  "model_trend": [{"date":"2026-01-01","source":"Open Demo Model","dem_probability":0.64,"rep_probability":0.36},{"date":"2026-01-15","source":"Open Demo Model","dem_probability":0.68,"rep_probability":0.32}],
+  "tracking": {}, "tracking_history": [], "rating_changes": [], "model_changes": []
+}
