@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/obsidian-election-research/dashboard.schema.json",
+  "title": "Election race dashboard sidecar",
+  "type": "object",
+  "required": [
+    "schema_version", "race_id", "retrieved_at", "status", "source",
+    "source_url", "overview", "election_date", "candidates", "ratings",
+    "polling", "campaign_finance", "history", "models", "model_trend",
+    "election_calendar"
+  ],
+  "properties": {
+    "schema_version": { "type": "integer", "minimum": 1 },
+    "race_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]+$" },
+    "retrieved_at": { "type": "string", "format": "date-time" },
+    "status": { "type": "string", "minLength": 1 },
+    "source": { "type": "string", "minLength": 1 },
+    "source_url": { "type": "string", "format": "uri" },
+    "overview": { "type": "string" },
+    "election_date": { "type": "string", "minLength": 1 },
+    "candidates": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["name", "party"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "party": { "type": "string", "minLength": 1 },
+          "url": { "type": "string" }
+        }
+      }
+    },
+    "ratings": { "type": "array" },
+    "models": { "type": "array" },
+    "model_trend": { "type": "array" },
+    "polling": { "$ref": "#/$defs/statusObject" },
+    "campaign_finance": { "$ref": "#/$defs/statusObject" },
+    "history": { "$ref": "#/$defs/statusObject" },
+    "election_calendar": { "$ref": "#/$defs/statusObject" }
+  },
+  "$defs": {
+    "statusObject": {
+      "type": "object",
+      "required": ["status"],
+      "properties": { "status": { "type": "string", "minLength": 1 } }
+    }
+  }
+}

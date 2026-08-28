@@ -29,6 +29,17 @@ class WorkspaceContractTests(unittest.TestCase):
         self.assertNotIn("tombunting", source.lower())
         self.assertIn("input?.dataRoot", source)
 
+    def test_renderer_exposes_keyboard_and_selection_state(self):
+        source = (ROOT / "demo-vault/Resources/Views/election-race/view.js").read_text()
+        self.assertIn('"aria-selected"', source)
+        self.assertIn('"aria-pressed"', source)
+        self.assertIn('addEventListener("keydown"', source)
+        self.assertIn('setAttr("tabindex"', source)
+
+    def test_schema_and_validator_require_the_same_core_fields(self):
+        schema = json.loads((ROOT / "schema/dashboard.schema.json").read_text())
+        self.assertEqual(set(schema["required"]), validator.REQUIRED_KEYS)
+
 
 if __name__ == "__main__":
     unittest.main()

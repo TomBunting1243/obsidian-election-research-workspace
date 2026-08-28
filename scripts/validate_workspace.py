@@ -19,6 +19,7 @@ REQUIRED_KEYS = {
     "models", "model_trend", "polling", "campaign_finance", "history",
     "election_calendar",
 }
+RACE_ID_PATTERN = re.compile(r"^[a-z0-9][a-z0-9-]+$")
 
 
 def validate_dashboard(path: Path) -> list[str]:
@@ -29,6 +30,12 @@ def validate_dashboard(path: Path) -> list[str]:
         errors.append(f"{path}: missing {', '.join(missing)}")
     if data.get("race_id") != path.parent.name:
         errors.append(f"{path}: race_id does not match its directory")
+    if not RACE_ID_PATTERN.fullmatch(str(data.get("race_id", ""))):
+        errors.append(f"{path}: race_id is not URL- and path-safe")
+    for section in ("polling", "campaign_finance", "history", "election_calendar"):
+        value = data.get(section)
+        if not isinstance(value, dict) or not value.get("status"):
+            errors.append(f"{path}: {section} requires an explicit status")
     candidates = data.get("candidates", [])
     if len(candidates) < 2:
         errors.append(f"{path}: expected at least two candidates")
