@@ -22,7 +22,7 @@ The JSON sidecar is the boundary. A source adapter may fetch Wikipedia, an elect
 
 ## Editorial boundary
 
-In the production system, automation owns explicitly marked managed sections and synchronized properties. Human-written analysis lives outside those regions. Regeneration can replace structured tables and status blocks without overwriting commentary.
+In the full workspace, automation owns explicitly marked managed sections and synchronized properties. Human-written analysis lives outside those regions. Regeneration can replace structured tables and status blocks without overwriting commentary.
 
 ## Required runtime
 
