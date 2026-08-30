@@ -2,7 +2,7 @@
 
 A shareable starter vault for building interactive, source-aware election research dashboards in Obsidian.
 
-This project extracts the reusable UI and data contract from a larger 2026 midterm research system built through sustained human-AI collaboration. The production workspace covers 176 races; this public template ships three fictional races so it can demonstrate the complete interface without redistributing live forecasts, proprietary model data, or private research notes.
+This project extracts the reusable UI and data contract from a larger 2026 midterm research system. The original workspace covers 176 races; this public template ships three fictional races so it can demonstrate the complete interface without redistributing third-party datasets or research notes.
 
 ## What it demonstrates
 
@@ -45,16 +45,15 @@ tests/                               Contract tests
 
 The interface is reusable; a current election dataset is not automatically redistributable. Public political facts may still require attribution, while forecasts, polling aggregations, and model outputs can carry separate terms. The starter vault therefore uses invented jurisdictions, candidates, pollsters, and sources. Replace them with data you are licensed to use and cite every real source in the sidecar.
 
-## Built with AI, governed by evidence
+## Built with AI
 
-AI agents helped develop the original renderer, normalize heterogeneous inputs, extend the design from one state to every race, and build validation coverage. Human direction supplied the research model, editorial boundaries, UI judgment, and acceptance criteria. Generated sections were designed to leave handwritten analysis intact, and the production system was not considered healthy until all 176 race notes and 52 tests passed.
+The workspace was developed through human–AI collaboration across interface design, data normalization, validation, and accessibility. The original system was validated across all 176 race notes, while this public extraction includes synthetic fixtures and its own contract tests.
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for the data flow and extension points.
-See [HISTORY.md](HISTORY.md) for the distinction between the July prototype, the private 176-race workspace, and this public extraction.
 
 ## Related AI Experiment
 
-[MacWiki](https://github.com/TomBunting1243/MacWiki) applies the same evidence-gated human–AI collaboration method to a native macOS Wikipedia client, with an extensive Swift test suite and a documented product-development process.
+[MacWiki](https://github.com/TomBunting1243/MacWiki) applies the same human–AI collaboration method to a native macOS Wikipedia client with an extensive Swift test suite.
 
 ## License
 
