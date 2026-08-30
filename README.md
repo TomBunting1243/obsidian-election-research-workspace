@@ -52,6 +52,10 @@ AI agents helped develop the original renderer, normalize heterogeneous inputs, 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for the data flow and extension points.
 See [HISTORY.md](HISTORY.md) for the distinction between the July prototype, the private 176-race workspace, and this public extraction.
 
+## Related AI Experiment
+
+[MacWiki](https://github.com/TomBunting1243/MacWiki) applies the same evidence-gated human–AI collaboration method to a native macOS Wikipedia client, with an extensive Swift test suite and a documented product-development process.
+
 ## License
 
 Apache-2.0. The demo data is fictional and provided only as a software fixture.
